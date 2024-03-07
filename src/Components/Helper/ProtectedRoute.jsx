@@ -1,8 +1,8 @@
-import React from 'react'
-import { UserContext } from '../../UserContext'
+import React from 'react';
+import { UserContext } from '../../UserContext';
 import { Navigate } from 'react-router-dom';
 
-const ProtectedRoute = ({children}) => {
+const ProtectedRoute = ({ children }) => {
   const { login } = React.useContext(UserContext);
   if (login === true) {
     return children;
@@ -10,6 +10,6 @@ const ProtectedRoute = ({children}) => {
     return <Navigate to='/login'/>
   } else {
     return <></>;
-  }
+}
 }
 export default ProtectedRoute

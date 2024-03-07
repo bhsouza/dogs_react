@@ -6,7 +6,7 @@ export function TOKEN_POST(body) {
     options: {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),
     },
@@ -58,14 +58,14 @@ export function PHOTO_POST(formData, token) {
       headers: {
         Authorization: 'Bearer ' + token,
       },
+      body: formData,
     },
-    body: formData,
   };
 }
 
-export function PHOTOS_GET({page, total, user}) {
+export function PHOTOS_GET({ page, total, user }) {
   return {
-    url: `${API_URL}/api/photo?_page=${page}&_total=${total}&_user=${user}`,
+    url: `${API_URL}/api/photo/?_page=${page}&_total=${total}&_user=${user}`,
     options: {
       method: 'GET',
       cache: 'no-store',

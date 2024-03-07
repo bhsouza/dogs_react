@@ -1,6 +1,6 @@
-import React from 'react'
-import FeedModal from './FeedModal'
-import FeedPhotos from './FeedPhotos'
+import React from 'react';
+import FeedModal from './FeedModal';
+import FeedPhotos from './FeedPhotos';
 
 const Feed = () => {
   return (
@@ -8,7 +8,7 @@ const Feed = () => {
       <FeedModal />
       <FeedPhotos />
     </div>
-  )
-}
+  );
+};
 
-export default Feed
+export default Feed;

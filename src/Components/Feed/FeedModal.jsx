@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const FeedModal = () => {
-  return (
-    <div>FeedModal</div>
-  )
-}
+  return <div></div>;
+};
 
-export default FeedModal
+export default FeedModal;

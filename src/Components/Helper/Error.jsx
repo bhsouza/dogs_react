@@ -1,11 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-const Error = ({error}) => {
+const Error = ({ error }) => {
+  if (!error) return null;
+  return <p style={{ color: '#f31', margin: '1rem 0' }}>{error}</p>;
+};
 
-  if (!error) return null
-  return (
-    <p style={{color: '#f31', margin: '1.6rem 0', fontSize: '1.6rem'}}>{error}</p>
-  )
-}
-
-export default Error
+export default Error;

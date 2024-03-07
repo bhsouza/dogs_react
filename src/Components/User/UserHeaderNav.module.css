@@ -20,8 +20,8 @@
 }
 
 .nav a:hover,
-.nav button:hover,
 .nav a:focus,
+.nav button:hover,
 .nav button:focus {
   background: #FFF;
   box-shadow: 0 0 0 3px #eee;
@@ -29,13 +29,13 @@
   outline: none;
 }
 
-.nav a:global(.active) {
+.nav :global(a.active) {
   background: #FFF;
   box-shadow: 0 0 0 3px #fea;
   border-color: #fb1;
 }
 
-.nav a:global(.active) svg > * {
+.nav :global(a.active) svg > * {
   fill: #fb1;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .navMobile a:hover svg > *,
-.navMobile button:hover svg > *{
+.navMobile button:hover svg > * {
   fill: #fb1;
 }
 
