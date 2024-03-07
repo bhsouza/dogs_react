@@ -16,7 +16,7 @@
   padding: 1.6rem;
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 40rem) {
   .login {
     grid-template-columns: 1fr;
   }
